@@ -1,4 +1,4 @@
-# Crypto Conditions Quick Test
+# Crypto Conditions Quick (and dirty!) Test
 
 ## Purpose
 
