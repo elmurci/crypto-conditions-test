@@ -1,0 +1,34 @@
+{
+  "name": "crypto-conditions-quick-test",
+  "version": "0.0.1",
+  "description": "Crypto Conditions Quick Test",
+  "main": "bin/server.js",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Javi Romero <elmurci@gmail.com>",
+  "homepage": "",
+  "keywords": [
+    "crypto",
+    "conditions",
+    "interledger",
+    "demo"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "posttest": "npm run lint && nsp check"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "five-bells-condition": "^3.2.0"
+  },
+  "devDependencies": {
+
+  },
+  "engines": {
+    "node": "6.9.1"
+  }
+}
