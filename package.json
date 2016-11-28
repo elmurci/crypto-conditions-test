@@ -23,11 +23,10 @@
   },
   "dependencies": {
     "colors": "^1.1.2",
-    "five-bells-condition": "^3.2.0"
+    "five-bells-condition": "^3.2.0",
+    "inquirer": "^1.2.3"
   },
-  "devDependencies": {
-
-  },
+  "devDependencies": {},
   "engines": {
     "node": "6.9.1"
   }

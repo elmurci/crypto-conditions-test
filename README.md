@@ -10,4 +10,8 @@ A receiver shares a crypto condition with a receiver which tries to fulfill succ
 
 ## How to run it
 
-Just do `npm start`
+Just do `npm start` and answer the prompt questions
+
+## TODO
+
+**Do the rest of the cases apart from Ed25519**
