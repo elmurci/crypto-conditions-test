@@ -11,3 +11,11 @@ A receiver shares a crypto condition with a receiver which tries to fulfill succ
 ## How to run it
 
 Just do `npm start`
+
+## CC as Curried Functions
+
+* **preimageSha256**(hash)(preimage)()
+* **rsaSha256**(pubkey)(signature)(message)
+* **ed25519**(pubkey)(signature)(message)
+* **prefixSha256**(subcondition, prefix)(fulfillment)(message)
+* **thresholdSha256**(subconditions, threshold)(subfulfillments)(message)
