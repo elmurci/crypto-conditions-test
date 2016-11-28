@@ -10,10 +10,10 @@ function start(receiver_public_key, receiver_seed, message) {
   const condition = sender.createWithSubcondition(receiver_public_key, message)
 
   // Fullfill condition - Receiver
-  const fullfillment = receiver.fullfillWithSubcondition(receiver_public_key, receiver_seed, message)
+  const fulfillment = receiver.fulfillWithSubcondition(receiver_public_key, receiver_seed, message)
 
   // Validator
-  validator.validate(condition, fullfillment, message)
+  validator.validate(condition, fulfillment, message)
 }
 
 module.exports = {

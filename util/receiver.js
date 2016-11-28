@@ -4,7 +4,7 @@
 const colors = require('colors/safe'),
       cc = require('five-bells-condition');
 
-function fullfillCondition (pubKey, seed, message) {
+function fulfillCondition (pubKey, seed, message) {
 
   const receiver_fulfillment = new cc.Ed25519()
   console.log(colors.blue.bold('RECEIVER') + '\n');
@@ -13,16 +13,16 @@ function fullfillCondition (pubKey, seed, message) {
 
   receiver_fulfillment.sign(new Buffer(message), seed)
 
-  const fullfillment = receiver_fulfillment.serializeUri()
+  const fulfillment = receiver_fulfillment.serializeUri()
 
-  console.log(colors.blue('Fulfillment URI:' + fullfillment) + '\n')
+  console.log(colors.blue('Fulfillment URI:' + fulfillment) + '\n')
   //console.log(cc.fromFulfillmentUri(fullfillment))
 
   return receiver_fulfillment.serializeUri()
 
 }
 
-function fullfillWithSubcondition (pubKey, seed, message) {
+function fulfillWithSubcondition (pubKey, seed, message) {
 
   const receiver_fulfillment = new cc.Ed25519()
 
@@ -40,16 +40,16 @@ function fullfillWithSubcondition (pubKey, seed, message) {
   prefix.setPrefix(message)
   prefix.setSubfulfillment(receiver_fulfillment)
 
-  const fullfillment = prefix.serializeUri()
+  const fulfillment = prefix.serializeUri()
 
-  console.log(colors.blue('Fulfillment URI:' + fullfillment) + '\n')
-  //console.log(cc.fromFulfillmentUri(fullfillment))
+  console.log(colors.blue('Fulfillment URI:' + fulfillment) + '\n')
+  //console.log(cc.fromFulfillmentUri(fulfillment))
 
-  return fullfillment
+  return fulfillment
 
 }
 
 module.exports = {
-  fullfillCondition,
-  fullfillWithSubcondition
+  fulfillCondition,
+  fulfillWithSubcondition
 }

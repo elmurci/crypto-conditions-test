@@ -14,7 +14,7 @@ Just do `npm start` and answer the prompt questions
 
 ## TODO
 
-**Do the rest of the cases apart from Ed25519**
+*Do the rest of the cases apart from Ed25519*
 
 ## CC as Curried Functions
 

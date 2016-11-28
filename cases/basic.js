@@ -10,10 +10,10 @@ function start(receiver_public_key, receiver_private_key, message) {
   const condition = sender.createCondition(receiver_public_key)
 
   // Fullfill condition - Receiver
-  const fullfillment = receiver.fullfillCondition(receiver_public_key, receiver_private_key, message)
+  const fulfillment = receiver.fulfillCondition(receiver_public_key, receiver_private_key, message)
 
   // Validator
-  validator.validate(condition, fullfillment, message)
+  validator.validate(condition, fulfillment, message)
 }
 
 module.exports = {
