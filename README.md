@@ -12,8 +12,8 @@ A receiver shares a crypto condition with a receiver which tries to fulfill succ
 
 Just do `npm start` and answer the prompt questions.
 
-1) ed25519
-2) ed25519 with subcondition
+*1) ed25519
+*2) ed25519 with subcondition
 
 ## TODO
 
