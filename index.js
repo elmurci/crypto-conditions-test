@@ -4,7 +4,7 @@
 const inquirer = require('inquirer'),
       nacl = require('ed25519'),
       ed25519_basic = require('./cases/ed25519_basic'),
-      ed25519_basic_subcondition = require('./cases/ed25519_basicWithSubcondition')
+      ed25519_subcondition = require('./cases/ed25519_withSubcondition')
 
 var questions = [
   {
@@ -38,7 +38,7 @@ inquirer.prompt(questions).then(function (answers) {
       ed25519_basic.start(receiverKeypair.publicKey, receiverSeedBuffer, message)
       break;
     case '2':
-      ed25519_basic_subcondition.start(receiverKeypair.publicKey, receiverSeedBuffer, new Buffer(message))
+      ed25519_subcondition.start(receiverKeypair.publicKey, receiverSeedBuffer, new Buffer(message))
       break;
   }
 
