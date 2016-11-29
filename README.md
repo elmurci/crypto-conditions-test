@@ -14,11 +14,10 @@ Just do `npm start` and answer the prompt questions
 
 ## TODO
 
-*Implement:
+*Implement:*
 * PREIMAGE-SHA-256
 * THRESHOLD-SHA-256
 * RSA-SHA-256
-*
 
 ## CC's as Curried Functions
 
