@@ -3,8 +3,8 @@
 
 const inquirer = require('inquirer'),
       nacl = require('ed25519'),
-      ed25519_basic = require('./cases/basic'),
-      ed25519_basic_subcondition = require('./cases/basicWithSubcondition')
+      ed25519_basic = require('./cases/ed25519_basic'),
+      ed25519_basic_subcondition = require('./cases/ed25519_basicWithSubcondition')
 
 var questions = [
   {
@@ -44,8 +44,3 @@ inquirer.prompt(questions).then(function (answers) {
 
 
 });
-
-// inquirer.prompt(['1 - Ed25519 (basic), 2 - Ed25519 (subcondition)']).then(function (answers) {
-//     // Use user feedback for... whatever!!
-//     console.log(answers);
-// });

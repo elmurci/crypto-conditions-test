@@ -29,6 +29,7 @@ function createWithSubcondition (pubKey, message) {
   // Set public_key
   sender_fulfillment.setPublicKey(new Buffer(pubKey, 'hex'))
 
+  // Prefix
   const prefix = new cc.PrefixSha256()
   prefix.setPrefix(message)
   prefix.setSubfulfillment(sender_fulfillment)

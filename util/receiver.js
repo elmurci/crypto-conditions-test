@@ -42,8 +42,9 @@ function fulfillWithSubcondition (pubKey, seed, message) {
 
   const fulfillment = prefix.serializeUri()
 
+  const result = cc.validateFulfillment(receiver_fulfillment, condition, message)
+
   console.log(colors.blue('Fulfillment URI:' + fulfillment) + '\n')
-  //console.log(cc.fromFulfillmentUri(fulfillment))
 
   return fulfillment
 

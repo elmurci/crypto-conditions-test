@@ -14,9 +14,13 @@ Just do `npm start` and answer the prompt questions
 
 ## TODO
 
-*Do the rest of the cases apart from Ed25519*
+*Implement:
+* PREIMAGE-SHA-256
+* THRESHOLD-SHA-256
+* RSA-SHA-256
+*
 
-## CC as Curried Functions
+## CC's as Curried Functions
 
 * **preimageSha256**(hash)(preimage)()
 * **rsaSha256**(pubkey)(signature)(message)
