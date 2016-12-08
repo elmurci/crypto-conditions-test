@@ -10,7 +10,7 @@ A sender shares a crypto condition with a receiver which tries to fulfill succes
 
 ## How to run it
 
-`npm install` and then `npm start` and answer the prompt questions.
+`npm install`, `npm start` and answer the prompt questions.
 
 * 1) Ed25519
 * 2) PrefixSha256
