@@ -6,11 +6,11 @@ To understand and validate with an example one of the use cases of Crypto Condit
 
 ## Simple use case
 
-A receiver shares a crypto condition with a receiver which tries to fulfill successfully.
+A sender shares a crypto condition with a receiver which tries to fulfill successfully.
 
 ## How to run it
 
-Just do `npm start` and answer the prompt questions.
+`npm install` and then `npm start` and answer the prompt questions.
 
 * 1) Ed25519
 * 2) PrefixSha256
